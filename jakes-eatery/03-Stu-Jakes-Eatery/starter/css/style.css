@@ -1,0 +1,147 @@
+.logo {
+    background-color: white;
+    height: 230px;
+    background-image: url(../images/jakes-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.nav {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.left, .center, .right {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left, .right {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+.center a {
+    color: white;
+    padding: 5px 0px;
+    margin: 0px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: arial;
+}
+
+button {
+    color: black;
+    font-size: 16px;
+    padding: 15px;
+    width: 50%;
+    border-radius: 15px;
+}
+
+.left button {
+    background-color: skyblue;
+}
+
+.center a:hover {
+    border-bottom: 1px solid white;
+}
+
+/* .main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+} */
+
+.left button:hover, .right button:hover {
+    opacity: 0.5;
+}
+
+.right button {
+    background-color: yellow;
+}
+
+.column {
+    display: flex;
+    height: 1200px;
+    width: 800px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.meal1, .meal2, .meal3 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+.meal1 {
+    margin-top: 20px;
+    background-image: url(../images/steak.png);
+}
+
+.meal2 {
+    background-image: url(../images/soup.png);
+}
+
+.meal3 {
+    background-image: url(../images/cheesecake.png);
+}
+
+.text {
+    background: rgb(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 20px 40px;
+    color: white;
+}
+
+.text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+    font-family: arial;
+    padding: 30px;
+    /* height: 100px; */
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0px 30px;
+}
+
+.fb {
+    color: #3b5998;
+}
+
+.tw {
+    color: yellow;
+}
+
+.ig {
+    color: red;
+}
+
+/* hides the navbar links when the screen goes 800px or below */
+@media (max-width: 800px) {
+    .center a {
+        display: none;
+    }
+}
