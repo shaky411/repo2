@@ -23,13 +23,41 @@ body {
     ;
 }
 
-header,
 nav,
 aside {
     background-color: steelblue;
     color: White;
     padding: 20px;
-    border: skyblue 1px solid;
+    /* border: skyblue 1px solid; */
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px;
+}
+
+.button2 {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #cecece;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.button2 a {
+    text-decoration: none;
+    color: black;
 }
 
 footer {
@@ -64,7 +92,7 @@ footer {
 nav {
     display: flex;
     flex-direction: column;
-    background-image: url(./img/bg.jpg);
+    background-color: rgb(78, 78, 78);
 }
 
 nav a {
