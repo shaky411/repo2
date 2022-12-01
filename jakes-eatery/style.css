@@ -46,7 +46,7 @@ button {
 }
 
 .left button {
-    background-color: skyblue;
+    background-color: rgb(255, 0, 179);
 }
 
 .center a:hover {
