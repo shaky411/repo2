@@ -10,27 +10,33 @@ body {
     height: 100vh;
 
 
+    /* The body is the grid container */
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 70px;
+
+    /* This is how I want to divide the grid items */
     grid-template-areas: 
     "header header header"
     "nav content sidebar"
-    "nav footer footer"
+    "footer footer footer"
     ;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 80px 1fr 70px;
 }
 
 header,
-main,
 nav,
-aside,
-footer {
+aside {
     background-color: steelblue;
     color: White;
     padding: 20px;
     border: skyblue 1px solid;
 }
 
+footer {
+    background-color: green;
+}
+
+/* Must define the grid areas */
 header {
     grid-area: header;
 }
@@ -49,4 +55,61 @@ aside {
 
 footer {
     grid-area: footer;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./img/bg.jpg);
+}
+
+nav a {
+    color: white;
+    margin: 20px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+main h2 {
+    padding: 10px;
+}
+
+main p {
+    padding: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.p1 {
+    text-decoration: underline;
+    color: black;
+}
+
+.button {
+    display: inline;
+    margin: 8px; 
+    background-color: black;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    opacity: 0.5;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
 }
